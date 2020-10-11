@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:stretchColumns="0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/loggedInuserNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textSize="18sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Num"
+                android:textSize="18sp" />
+            <EditText android:id="@+id/edtNum"
+                android:inputType="number"
+                android:layout_column="2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Product_Label"
+                android:textSize="18sp" />
+            <EditText android:id="@+id/edtLabel"
+                android:inputType="text"
+                android:layout_column="2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Quantity"
+                android:textSize="18sp" />
+            <EditText android:id="@+id/edtquantity"
+                android:inputType="number"
+                android:layout_column="2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Purchase Price"
+                android:textSize="18sp" />
+            <EditText android:id="@+id/edtPurPrice"
+                android:inputType="number"
+                android:layout_column="2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Sale Price"
+                android:textSize="18sp" />
+            <EditText android:id="@+id/edtSalePrice"
+                android:inputType="number"
+                android:layout_column="2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btnAjouter"
+                android:text="Add"
+                android:layout_column="1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:drawableRight="@android:drawable/ic_menu_save"
+                />
+            <Button
+                android:id="@+id/btnSupprimer"
+                android:text="Del"
+                android:layout_column="2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:drawableLeft="@android:drawable/ic_menu_delete"
+                android:layout_centerVertical="true"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button android:id="@+id/btnAfficher"
+                android:text="Select"
+                android:layout_column="1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:drawableRight="@android:drawable/ic_menu_view"
+
+                />
+            <Button android:id="@+id/btnAffichertout"
+                android:text="SelectAll"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button android:id="@+id/btnSuivant"
+                android:text="Next"
+                android:layout_column="1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:drawableRight="@android:drawable/ic_media_next"
+
+                />
+            <Button android:id="@+id/btnPrecedent"
+                android:text="Previous"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:drawableLeft="@android:drawable/ic_media_previous"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnModifier"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:drawableRight="@android:drawable/ic_input_get"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/btnVider"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:drawableRight="@android:drawable/ic_notification_clear_all"
+                android:text="ClearFields" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btnPremier"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="First" />
+
+            <Button
+                android:id="@+id/btnDernier"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="Last" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="100dp"
+                android:layout_height="59dp"
+                android:layout_column="1"
+                android:onClick="Disconnect"
+                android:text="Logout" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
